@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SharedPref_SampleOne_Android_Github</string>
+    <string name="text_signin">SignIn</string>
+    <string name="hint_email">Email Id</string>
+    <string name="hint_password">Password</string>
+    <string name="button_text_loginin">Log In</string>
+</resources>
