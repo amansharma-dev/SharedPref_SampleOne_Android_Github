@@ -40,5 +40,6 @@
         android:layout_below="@id/edit_text_holder"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
-        android:text="@string/button_text_loginin"/>
+        android:text="@string/button_text_loginin"
+        android:onClick="signIn"/>
 </RelativeLayout>
