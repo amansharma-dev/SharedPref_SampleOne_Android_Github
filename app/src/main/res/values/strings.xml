@@ -4,4 +4,8 @@
     <string name="hint_email">Email Id</string>
     <string name="hint_password">Password</string>
     <string name="button_text_loginin">Log In</string>
+    <string name="text_follow">Follow amansharma-dev.</string>
+    <string name="text_thankyou">Thank You!</string>
+    <string name="toolbar_text_main">Main Activity</string>
+    <string name="toolbar_text_signin">SignIn Activity</string>
 </resources>

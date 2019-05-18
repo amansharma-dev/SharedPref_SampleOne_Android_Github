@@ -4,6 +4,7 @@ import android.content.SharedPreferences;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -17,12 +18,20 @@ public class SigninActivity extends AppCompatActivity {
 
     public static final String EMAIL_KEY = "email_key";
 
+    private Toolbar toolbar;
     private EditText email,password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar_signin);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(R.string.toolbar_text_signin);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
 
         email = findViewById(R.id.email_et);
         password = findViewById(R.id.password_et);
@@ -66,5 +75,11 @@ public class SigninActivity extends AppCompatActivity {
 
     private boolean isPasswordValid(String password){
         return password.length()>4;
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }
